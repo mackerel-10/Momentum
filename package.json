@@ -1,0 +1,26 @@
+{
+  "name": "nomad-chrome-clone-coding",
+  "version": "1.0.0",
+  "description": "<h2>Nomad Chrome clone coding</h2>",
+  "main": "index.js",
+  "type": "module", 
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mack-10/Nomad-Chrome-Clone-coding.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mack-10/Nomad-Chrome-Clone-coding/issues"
+  },
+  "homepage": "https://github.com/mack-10/Nomad-Chrome-Clone-coding#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
