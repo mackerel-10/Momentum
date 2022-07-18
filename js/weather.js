@@ -11,7 +11,7 @@ function onGeoSuccess(position) { // GeolocationPosition Object를 받는다. �
 }
 
 function onGeoError() {
-	console.log('error')
+	alert("Can't find you. No weather for you.")
 }
 
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
