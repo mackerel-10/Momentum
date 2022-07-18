@@ -2,6 +2,7 @@ function onGeoSuccess(position) { // GeolocationPosition Object를 받는다. �
 	const lat = position.coords.latitude;
 	const lon = position.coords.longitude;
 	const url = `http://localhost:3000/get-weather-data?lat=${lat}&lon=${lon}`;
+
 	fetch(url).then(response => response.json().then(data => {
 		const weather = document.querySelector("#weather span:first-child");
 		const city = document.querySelector("#weather span:last-child");
