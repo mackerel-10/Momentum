@@ -1,7 +1,8 @@
 function onGeoSuccess(position) { // GeolocationPosition Object를 받는다. 하나의 input으로.
 	const lat = position.coords.latitude;
 	const lon = position.coords.longitude;
-	const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+	const url = `http://localhost:3000/get-weather-data?lat=${lat}&lon=${lon}`;
+
 	fetch(url).then(response => response.json().then(data => {
 		const weather = document.querySelector("#weather span:first-child");
 		const city = document.querySelector("#weather span:last-child");
@@ -11,7 +12,7 @@ function onGeoSuccess(position) { // GeolocationPosition Object를 받는다. �
 }
 
 function onGeoError() {
-	alert("Can't find you. No weather for you.")
+	console.log('error')
 }
 
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
